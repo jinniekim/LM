@@ -52,6 +52,10 @@ header {
     .container-nav {
         flex-direction: column;
     }
+    
+    header {
+        text-align: center;
+    }
 }
 .container-list {
     font-size: 1.2rem;
