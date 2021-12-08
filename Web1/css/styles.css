@@ -112,3 +112,10 @@ img {
     min-height: 50%;
     max-height: 100%;
 }
+
+footer {
+    background:#143774;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
