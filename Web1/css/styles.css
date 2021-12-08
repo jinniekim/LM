@@ -107,8 +107,8 @@ nav a:focus {
 }
 
 img {
-    max-width: 900;
-    min-width: 300;
-    min-height: 50;
-    max-height: 500;
+    max-width: 100%;
+    min-width: 50%;
+    min-height: 50%;
+    max-height: 100%;
 }
