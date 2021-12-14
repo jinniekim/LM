@@ -1,0 +1,126 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Montserrat', serif;
+}
+
+/* =================
+Typography
+================= */
+
+h1 {
+    font-weight: 700;
+    color: #143774;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* =================
+Layout
+================= */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
+}
+
+@media (max-width: 675px) {
+    .container-nav {
+        flex-direction: column;
+    }
+    
+    header {
+        text-align: center;
+    }
+}
+.container-list {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #143774;
+    text-align-last: center;
+}
+/* navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    font-weight: bold;
+    font-weight: bold;
+    padding: .3em .7em;
+    background-color: #E6E6E6;
+    border-radius: 1em;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media (max-width: 675px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: .5em 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    min-width: 50%;
+    min-height: 50%;
+    max-height: 100%;
+}
+
+footer {
+    background:#143774;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    padding: 2em 0;
+}
