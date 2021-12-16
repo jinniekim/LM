@@ -1,0 +1,144 @@
+
+html, body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background-color: #b8b8a8;
+}
+
+.wrapper {
+    padding: 3em;
+}
+.content {
+    background-image: url(seoul_skyscraper.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+}
+
+img.small-logo{
+    max-width: 3em;
+}
+
+img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+a.logo {
+    color:rgb(35, 44, 36);
+    padding-left: 1.5em;
+    font-weight: bolder;
+    font-size: 2.3em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+    margin-top: 1.5em;
+    line-height: 43px;
+}
+ 
+nav li {
+    margin-right: 1em;
+    vertical-align: middle;
+ }
+ 
+nav a {
+    text-decoration: none;
+    color:rgb(35, 44, 36);
+    font-weight: 700;
+    font-weight: bold;
+    font-weight: bold;
+    padding: .3em .7em;
+    background-color: white;
+    border-radius: 1em;
+}
+
+nav a:hover,
+nav a:focus {
+    color: rgb(207, 22, 8);
+}
+
+.hero-left {
+    text-align: center;
+}
+
+h1 {
+    color:white;
+    font-size: 4em;
+    width: 80%;
+    margin: .5em;
+    text-align: left;
+}
+
+.hero-left p {
+    font-size: 1.5em;
+    width: 80%;
+    margin: 1em auto;
+}
+.wrapper {
+    padding-bottom: 0.1em;
+    padding-right: .5em;
+}
+
+ul.list {
+    Justify-content: space-between;
+    margin: 5em .5em;  
+    text-transform: capitalize;
+    font-size: 3em;
+    font-weight: 700;   
+    padding: 1em;
+    color:white;
+    margin-bottom: 1em;
+    text-align: right;
+    text-shadow: black;
+}
+
+@media (min-width: 1000px) {
+    ul.list {
+        margin: 1em;  
+        padding: 1em;
+        color:white;
+
+    }
+}
+
+@media (min-width: 390px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul {
+        margin-top: .2em;
+    }
+    nav ul li:nth-of-type(3) {
+        margin-right: 0;
+    }
+
+    ul.list {
+        Justify-content: space-between;
+        margin-top: 4em .5em;  
+        text-transform: capitalize;
+        font-size: 3em;
+        font-weight: 700;  
+        padding: 1em;
+        margin-bottom: 1em;
+        text-align:right;
+        text-shadow: black;
+    }
+}
+
+
+
