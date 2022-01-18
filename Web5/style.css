@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
+
 
 html, body {
-    font-family: 'Montserrat';
+    font-family: 'EB Garamond', serif;    
     margin: 0;
     padding: 0;
 }
 
 body {
     
-    background-color: #b8b8a8;
+    background-color: rgb(192, 184, 184);
 }
 
 .wrapper {
@@ -26,42 +28,34 @@ img.small-logo{
     max-width: 3em;
 }
 
+a.logo {
+    color:rgb(35, 44, 36);
+    padding-left: 1.5em;
+    padding-bottom: 2em;
+    font-weight: bolder;
+    font-size: 2.3rem;
+    margin: .2em, 1em;
+}
 img {
     width: 100%;
     position: absolute;
     z-index: -1;
 }
 
-a.logo {
-    color:rgb(35, 44, 36);
-    padding-left: 1.5em;
-    font-weight: bolder;
-    font-size: 2.3em;
-    margin: .2em, 1em;
-}
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-nav ul {
-    display: flex;
-    margin-top: .5em;
-    margin-bottom: 2em;
-    line-height: 43px;
-}
  
-nav li {
-    margin-right: 1.5em;
-    vertical-align: middle;
- }
  
 nav a {
-    margin-right: 2em;
+    padding: .5em;
+    margin: 2.5em;
     text-decoration: none;
-    color:rgb(35, 44, 36);
-    font-size:1em;
+    color:rgb(139, 15, 15);
+    font-size:1.5rem;
     font-weight: bold;
     
 }
@@ -76,8 +70,8 @@ nav a:focus {
 }
 
 h1 {
-    color:white;
-    font-size: 4em;
+    color:goldenrod;
+    font-size: 3.5rem;
     width: 80%;
     margin: .5em;
     text-align: left;
@@ -98,11 +92,11 @@ ul.list {
     margin: 5em .5em;  
     text-transform: capitalize;
     font-size: 3em;
-    font-weight: 700;   
+    font-weight: 600;   
     padding: 1em;
-    color:white;
+    color:goldenrod;
     margin-bottom: 1em;
-    text-align: right;
+    text-align: left;
     text-shadow: black;
 }
 
@@ -110,7 +104,7 @@ ul.list {
     ul.list {
         margin: 1em;  
         padding: 1em;
-        color:white;
+        color:goldenrod;
 
     }
 }
@@ -132,7 +126,7 @@ ul.list {
         margin-top: 4em .5em;  
         text-transform: capitalize;
         font-size: 3em;
-        font-weight: 700;  
+        font-weight: 600;  
         padding: 1em;
         margin-bottom: 1em;
         text-align:right;

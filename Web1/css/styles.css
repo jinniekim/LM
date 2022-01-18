@@ -6,25 +6,48 @@ font-family: 'Ubuntu', sans-serif;
 
 body {
     margin: 0;
-    font-family: 'Garamond', serif;
+    font-family: 'Lora', serif;
+    background-color: black;
 }
 
 /* =================
 Typography
 ================= */
+a {
+    text-decoration: none;
+}
 
-h1 {
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-title {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+img.small-logo{
+    max-width: 2.8em;
+}
+
+a.logo {
+    padding-left: .2em;
+    color: #030c01;
     font-weight: 700;
-    color: #143774;
-    font-size: 2rem;
-    margin: 0;
+    font-size: 2rem;   
 }
 
 .subtitle {
-    font-weight: 700;
-    color: #1792d2;
-    font-size: 1.2rem;
-    margin: 0;
+    font-weight: 900;
+    color: goldenrod;
+    font-size: 2rem;
+    margin: 1em;
+    align-items: left;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+
 }
 
 /* =================
@@ -42,26 +65,25 @@ Layout
     justify-content: space-between;
 }
 
-
 header {
-    background: #f8f8f8;
-    padding: 2em 0;
+    background: #d6deee;   
+    padding: 1.2em 0;
 }
 
 @media (max-width: 675px) {
     .container-nav {
         flex-direction: column;
-    }
-    
+    }    
     header {
         text-align: center;
     }
 }
-.container-list {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #143774;
-    text-align-last: center;
+
+.list {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: goldenrod;
+    text-align-last: left;
 }
 /* navigation */
 
@@ -70,52 +92,73 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    text-transform: capitalize;
 }
 
 nav li {
-    margin-left: 2em;
+    margin-left: 1em;
+    text-transform: capitalize;
+    padding-bottom: 1em;
 }
 
-nav a {
-    text-decoration: none;
-    color: #707070;
+ul.list {
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 1em;  
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;   
+    padding: 2em 0;
+    color:goldenrod;
+    margin-bottom: 1em;
+    text-align: left;
+    text-shadow: black;
+}
+.btn {
+    text-decoration:none;
+    display: inline-block;
+    color: #061a02;
+    background-color: rgb(197, 50, 50);
     font-weight: 700;
-    padding: .25em 0;
+    padding: .3em 0.7em;
+    margin-top: .3em;
 }
 
 nav a:hover,
 nav a:focus {
-    color: #1792d2;
+    color: goldenrod;
 }
 
-.current-page {
-    border-bottom: 1px solid #707070;
-}
+.content {
+    background-repeat: no-repeat;
+    max-width: 100%;
+    min-width: 60%;
+    min-height: 60%;
+    max-height: 100%;
+    background-image: linear-gradient(120deg, rgba(0,0,0,0.7), rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 50%, rgba(0,0,0,0)), url("../image/seoul_skyscraper.jpg");
+    background-size: 100%;
+    z-index: -1;
 
-.current-page:hover {
-    color: #707070;
 }
-
 @media (max-width: 675px) {
     nav ul {
         flex-direction: column;
+        text-transform: capitalize;
     }
     
     nav li {
         margin: .5em 0;
+        text-transform: capitalize;
     }
 }
 
-img {
-    max-width: 100%;
-    min-width: 50%;
-    min-height: 50%;
-    max-height: 100%;
-}
 
 footer {
-    background:#143774;
-    color: white;
+    line-height: 1.2rem;
+    font-size: .8rem;
+    background: black;
+    color: gray;
     text-align: center;
     padding: 2em 0;
+    font-weight: 500;
 }
