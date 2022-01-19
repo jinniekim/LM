@@ -1,9 +1,3 @@
-/*  Fonts
------
-font-family: 'Lora', serif;
-font-family: 'Ubuntu', sans-serif;
-*/
-
 body {
     margin: 0;
     font-family: 'Lora', serif;
@@ -20,6 +14,8 @@ a {
 header {
     display: flex;
     justify-content: space-between;
+    background: #d6deee;   
+    padding: 1.2em 0;
 }
 
 .site-title {
@@ -34,12 +30,12 @@ img.small-logo{
 a.logo {
     padding-left: .2em;
     color: #030c01;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 2rem;   
 }
 
 .subtitle {
-    font-weight: 900;
+    font-weight: 600;
     color: goldenrod;
     font-size: 2rem;
     margin: 1em;
@@ -47,7 +43,6 @@ a.logo {
     justify-content: space-between;
     flex-direction: column;
     text-align: center;
-
 }
 
 /* =================
@@ -65,11 +60,6 @@ Layout
     justify-content: space-between;
 }
 
-header {
-    background: #d6deee;   
-    padding: 1.2em 0;
-}
-
 @media (max-width: 675px) {
     .container-nav {
         flex-direction: column;
@@ -80,23 +70,25 @@ header {
 }
 
 .list {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 600;
     color: goldenrod;
     text-align-last: left;
 }
 /* navigation */
-
+span {
+    color: gold;
+}
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    text-transform: capitalize;
     margin: 0;
 }
 
 nav li {
+    font-weight: 600;
     margin-left: 1em;
     text-transform: capitalize;
     padding-bottom: 1em;
@@ -107,7 +99,7 @@ ul.list {
     flex-direction: column;
     margin: 1em;  
     text-transform: capitalize;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;   
     padding: 2em 0;
     color:goldenrod;
@@ -116,13 +108,17 @@ ul.list {
     text-shadow: black;
 }
 .btn {
+    text-transform: uppercase;
     text-decoration:none;
     display: inline-block;
-    color: #061a02;
-    background-color: goldenrod;
-    font-weight: 700;
-    padding: .3em 0.7em;
+    letter-spacing: 1px;
+    color: #0a2e03;
+    background-color: rgb(223, 177, 62);
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: .3em 0.5em;
     margin-top: .3em;
+    cursor: pointer;
 }
 
 nav a:hover,
